@@ -11,14 +11,17 @@
 <body>
     <div class="player-container">
         <div class="player-container__nav-bar">
-            <img class="arrow" src="./assets/media-icons/down-arrow.svg" alt="down arrow">
+            <figure>
+                <img class="arrow" src="./assets/media-icons/down-arrow.svg" alt="down arrow">
+            </figure>
+            
             <p class="text-status">Playing now</p> 
             <span class="menu-icon"></span>
             
         </div>
         <div class="player-container__cards-container player-container__cards-container--slider">
             <div class="card">
-                <img src="./assets/media-img/takagi.jpg" alt="Takagi-san album">
+                <img class="firts-img" src="./assets/media-img/takagi.jpg" alt="Takagi-san album">
                 <h2>Takagi-san</h2>
                 <p>Jitensha</p>
             </div>
@@ -28,7 +31,7 @@
                 <p>Sense</p>
             </div>
             <div class="card">
-                <img src="./assets/media-img/thousand-foot.jpg" alt="thousand foot krutch album">
+                <img class="last-img" src="./assets/media-img/thousand-foot.jpg" alt="thousand foot krutch album">
                 <h2>Thousand foot krutch</h2>
                 <p>Stranger</p>
             </div>
@@ -38,14 +41,15 @@
             <img src="./assets/media-img/time-reproduction.png" alt="reproduction bar">
         </div> 
         <div class="player-container__buttons">
-            <div class="button button-random"></div>
-            <div class="button button-play-back"></div>
-            <div class="button button-play">
-                <img src="./assets/media-icons/Play-button.png" alt="play-button">
+            <div class="button-container">
+                <div class="button button-random"></div>
+                <div class="button button-play-back"></div>
+                <div class="button button-play">
+                    <img src="./assets/media-icons/Play-button.png" alt="play-button">
+                </div>
+                <div class="button button-play-next"></div>
+                <div class="button button-list"></div>
             </div>
-            <div class="button button-play-next"></div>
-            <div class="button button-list"></div>
-
         </div>
 
     </div>
