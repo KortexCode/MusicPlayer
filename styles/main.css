@@ -147,7 +147,7 @@ body{
 }
 .progress-bar__in-progress{
     position: absolute;
-    width: 20%;
+    width: 75px;
     height: 5px;
     border-radius: 8px;
     background-color: var(--primary-color);
@@ -155,9 +155,11 @@ body{
 .progress-bar__ball{
     position: absolute;
     top:-3px;
-    left: 50px;
+    left: 65px;
+    right:0;
     width: 12px;
     height: 12px;
+    margin: 0 auto;
     border-radius: 50%;
     background-color: var(--primary-color);
 }
