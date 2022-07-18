@@ -23,7 +23,7 @@ body{
 .player-container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70px 300px 1fr 120px;
+    grid-template-rows: 15% 50% 15% 20%;
    /*  grid-template-rows: 1fr 300px 90px 120px;  */
     width: 100%;
     max-width: 400px;
@@ -73,7 +73,6 @@ body{
    display: flex;
    gap:30px ;
    width: 100%;
-   padding: 0 20px 0;  
    align-items: center;
 }
 .player-container__cards-container--slider{
@@ -105,8 +104,8 @@ body{
     scroll-snap-align: center;
 }
 .player-container__cards-container img{
-    width: 170px;
-    height: 170px;
+    width: 230px;
+    height: 230px;
     margin-bottom: 1.5rem;
     border-radius: 8px;
     box-shadow:  10px 10px 5px rgba(14, 12, 12, 0.86),
