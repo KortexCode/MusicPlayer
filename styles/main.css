@@ -23,22 +23,26 @@ body{
 .player-container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70px 1fr 60px 120px;
+    grid-template-rows: 70px 1fr 70px 120px;
+   /*  grid-template-rows: 1fr 300px 90px 120px;  */
     width: 100%;
-    max-width: 800px;
+    max-width: 400px;
+    min-width: 300px;
     height: 100%;
+    margin: 0 auto;
     background-color: var(--player-background);
 }
 
 /*Navigation bar*/
 .player-container__nav-bar{
     justify-self:center;
+    align-self: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     height: 100%;
-    padding: 0 5px 10px;
+    padding: 10px 5px 0;
 }
 .player-container__nav-bar figure{
     padding-top: 10px;
@@ -57,7 +61,7 @@ body{
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("./assets/media-icons/menu-icon.svg");
+    background-image: url("../assets/media-icons/menu-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 5px 20px;
@@ -68,16 +72,32 @@ body{
 .player-container__cards-container{
    display: flex;
    gap:30px ;
-   align-items: center;
-
    width: 100%;
    padding: 0 20px 0;  
+   align-items: center;
 }
 .player-container__cards-container--slider{
    overflow-x: scroll;
    overscroll-behavior-x:contain;
    scroll-snap-type: x mandatory;
 }
+.player-container__cards-container--slider::-webkit-scrollbar{
+ 
+   height: 7px;
+   background-color: var(--player-buttons);
+}
+.player-container__cards-container--slider::-webkit-scrollbar-track{
+    border-radius: 60px;
+  
+} 
+.player-container__cards-container--slider::-webkit-scrollbar-thumb{
+    background-color:rgba(14, 12, 12, 0.96);
+    border-radius: 20px;
+    
+}
+
+
+
 .player-container__cards-container .card{
     width: 90%;
     margin: 0 auto;
@@ -108,9 +128,11 @@ body{
 
 .player-container__progress-bar-container{
    justify-self: center;
+   align-self: center;
    display: grid;
    grid-template-columns: 100%;
    width: 90%;
+   padding-top: 20px;
    
 }
 
@@ -143,6 +165,7 @@ body{
 .bar-timer{
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
 }
 .bar-timer > p{
     font-size: 1.2rem;
@@ -183,7 +206,7 @@ body{
 .button-play-back{
     width: 50px;
     height: 50px;
-    background: var(--player-buttons) url('./assets/media-icons/play-back-button.png') no-repeat;
+    background: var(--player-buttons) url('../assets/media-icons/play-back-button.png') no-repeat;
     background-size: 20px 20px;
     background-position: center;
 }
@@ -202,7 +225,7 @@ body{
 .button-play-next{
     width: 50px;
     height: 50px;
-    background: var(--player-buttons) url('./assets/media-icons/play-next-button.png') no-repeat;
+    background: var(--player-buttons) url('../assets/media-icons/play-next-button.png') no-repeat;
     background-size: 20px 20px;
     background-position: center;
     
@@ -211,7 +234,7 @@ body{
     align-self: flex-start;
     width: 40px;
     height: 40px;
-    background: var(--player-buttons) url('./assets/media-icons/button-random.png') no-repeat;
+    background: var(--player-buttons) url('../assets/media-icons/button-random.png') no-repeat;
     background-size: 20px 20px;
     background-position: center;
     
@@ -220,7 +243,7 @@ body{
     align-self: flex-start;
     width: 40px;
     height: 40px;
-    background: var(--player-buttons) url('./assets/media-icons/play-list-button.png') no-repeat;
+    background: var(--player-buttons) url('../assets/media-icons/play-list-button.png') no-repeat;
     background-size: 15px 15px;
     background-position: center;
    
