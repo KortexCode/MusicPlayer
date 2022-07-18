@@ -4,7 +4,7 @@
 
 
     /*Backgrounds*/
-    --player-background:rgba(14, 12, 12, 0.86);
+    --player-background:rgba(14, 12, 12, 0.88);
     --player-buttons:rgba(67, 68, 61, 0.42);
 }
 *{
@@ -183,7 +183,6 @@ body{
     align-items: center;
     width: 90%;
     height: 100%;
-   
 }
 .button-container{
     width: 100%;
@@ -200,7 +199,11 @@ body{
     background-color: var(--player-buttons);
     box-shadow:  7px 7px 5px rgba(14, 12, 12, 0.86),
              -4px -4px 10px rgba(255, 255, 255, 0.50), inset 4px 4px 7px 3px rgba(14, 12, 12, 0.86);
-    
+}
+.button:hover{
+    transform: scale(1.1);
+    box-shadow:  4px 4px 10px var(--primary-color),
+             -4px -4px 10px var(--primary-color), inset 4px 4px 7px 3px rgba(14, 12, 12, 0.86);
 
 }
 .button-play-back{
@@ -214,7 +217,8 @@ body{
     position: relative;
     box-shadow:  7px 7px 5px rgba(14, 12, 12, 0.86),
              -4px -4px 10px rgba(255, 255, 255, 0.50), inset 4px 4px 20px 3px rgba(14, 12, 12, 0.86);
-}  
+} 
+
 .button-play img{
     position: absolute;
     top: calc(30px - 17.5px);
@@ -236,8 +240,7 @@ body{
     height: 40px;
     background: var(--player-buttons) url('../assets/media-icons/button-random.png') no-repeat;
     background-size: 20px 20px;
-    background-position: center;
-    
+    background-position: center; 
 }
 .button-list{
     align-self: flex-start;
@@ -245,7 +248,5 @@ body{
     height: 40px;
     background: var(--player-buttons) url('../assets/media-icons/play-list-button.png') no-repeat;
     background-size: 15px 15px;
-    background-position: center;
-   
-    
+    background-position: center;  
 }

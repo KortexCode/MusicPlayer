@@ -3,3 +3,10 @@
     height: 210px;
     
 }
+.button{
+    transform: scale(1.2);
+}
+.button:hover{
+    transform: scale(1.3);
+
+}
