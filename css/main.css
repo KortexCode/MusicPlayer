@@ -23,7 +23,7 @@ body{
 .player-container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70px 1fr 70px 120px;
+    grid-template-rows: 70px 300px 1fr 120px;
    /*  grid-template-rows: 1fr 300px 90px 120px;  */
     width: 100%;
     max-width: 400px;
